@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Player (test) </title>
+
+    <link href="./style.css" rel="stylesheet" type="text/css" />
+
+    <!-- fontawesome cdnjs  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+</head>
+<body>
+
+    
+    <div class="container">
+
+        <div class="left">
+
+            <video src="./libs/samplevideo1.mp4" id="videoscreen" ></video>
+
+            <div class="controls">
+
+                <button type="button" id="reloadbtn" class="btn reloadbtn">
+                    <i class="fas fa-sync-alt"></i>
+                </button>
+
+                <button type="button" id="playbtn" class="btn" >
+                    <i class="fas fa-play"></i>
+                </button>
+
+                <div id="progress" class="progress">
+                    <div id="progressbar" class="progressbar"></div>
+                </div>
+
+                <span id="showtimes" class="showtimes">00:00 /<span id="totaltimes">00:00</span></span>
+
+
+
+                <span id="openfullscreen" class="openfullscreen"><i class="fas fa-expand-arrows-alt"></i></span>
+                <span id="closefullscreen" class="closefullscreen"><i class="fas fa-expand"></i></span>
+
+
+            </div>
+
+        </div>
+
+        <div class="header">
+            <h3>Related Videos</h3>
+        </div>
+
+        <div class="right">
+
+            <div class="slidevideos">
+                <video src="./libs/IU_CELEBRITY.mp4"></video>
+                <div class="videoinfo">
+                    <h2 class="videoname" id="videoname">IU_CELI</h2>
+                    
+                    <div class="numbershows">
+                        <h6 id="views" data-target="22989">22899 Views</h6>
+                        <h6 class="viewsshows"> Views</h6>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="slidevideos">
+                <video src="./libs/IU_BIBI.mp4"></video>
+                <div class="videoinfo">
+                    <h2 class="videoname" id="videoname">IU_BIBI</h2>
+                    
+                    <div class="numbershows">
+                        <h6 id="views" data-target="29589" >22899 Views</h6>
+                        <h6 class="viewsshows"> Views</h6>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="slidevideos">
+                <video src="./libs/IU_SOMEDAY.mp4"></video>
+                <div class="videoinfo">
+                    <h2 class="videoname" id="videoname">IU_SOMEDAY</h2>
+                   
+
+                    <div class="numbershows">
+                        <h6 id="views" data-target="66789">22899 Views</h6>
+                        <h6 class="viewsshows"> Views</h6>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="slidevideos">
+                <video src="./libs/IU_COIN.mp4"></video>
+                <div class="videoinfo">
+                    <h2 class="videoname" id="videoname">IU_COIN</h2>
+                    <div class="numbershows">
+                        <h6 id="views" data-target="676745">22899 Views</h6>
+                        <h6 class="viewsshows"> Views</h6>
+                    </div>
+                </div>
+            </div>
+
+            <div class="slidevideos">
+                <video src="./libs/IU_LIAC.mp4"></video>
+                <div class="videoinfo">
+                    <h2 class="videoname" id="videoname">IU_LIAC</h2>
+                    
+
+                    <div class="numbershows">
+                        <h6 id="views" data-target="44368">22899 Views</h6>
+                        <h6 class="viewsshows"> Views</h6>
+                    </div>
+                </div>
+            </div>
+
+           
+        </div>
+    </div>
+
+
+
+
+
+    <script src="./app.js"></script>
+    
+</body>
+</html>
